@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <img src="./assets/logo.png" alt="" />
+    <!-- <HelloWorld /> -->
     <p>当前运行环境: {{ env }}</p>
     <p>当前请求接口地址: {{ api }}</p>
   </div>
@@ -7,8 +9,12 @@
 
 <script>
 import { currentEnv, API_URL } from '@/const'
+// import HelloWorld from './components/HelloWorld'
 export default {
   name: 'App',
+  components: {
+    // HelloWorld,
+  },
   data() {
     return {
       env: currentEnv,
