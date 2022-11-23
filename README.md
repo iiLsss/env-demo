@@ -57,13 +57,13 @@ VUE_APP_API_URL = 'https://api.domain.com'
 
 - package.json 增加配置项命令
 
-```json
+```js
 "scripts": {
-    // 使用.env.dev 文件启动项目  
+  // 使用.env.dev 文件启动项目  
   "dev": "vue-cli-service serve --mode dev",
-    // 使用.env.dev 文件打包项目
+  // 使用.env.dev 文件打包项目
   "build:prod": "vue-cli-service build --mode prod",
-    // 使用.env.dev 文件打包项目
+  // 使用.env.dev 文件打包项目
   "build:test": "vue-cli-service build --mode test",    
 },
 ```
